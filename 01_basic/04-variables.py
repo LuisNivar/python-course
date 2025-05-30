@@ -14,4 +14,6 @@ print(CONST_NAME)
 CONST_NAME = 52
 print(CONST_NAME)
 
+## Type Anotations
+my_boolean : bool = True
 
