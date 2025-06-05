@@ -44,3 +44,23 @@ for index, animal in enumerate(animals):
         continue
     
     print(index, animal)
+
+
+# LIST COMPREHENSION
+print("-"*60)
+#animals_upper = [animal.upper() for animal in animals]
+animals_upper = [_.upper() for _ in animals]
+print(animals_upper)
+print("-"*60)
+numbers = [_ for _ in range(9)]
+print(numbers)
+even = [_ for _ in range(20) if _ % 2 == 0]
+print(even)
+
+# range -> iterable NOT list
+print("-"*60)
+nums = range(10)
+print(nums)
+list_of_nums = list(nums)
+print(list_of_nums)
+print("-"*60)
