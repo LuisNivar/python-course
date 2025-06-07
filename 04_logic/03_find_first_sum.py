@@ -14,6 +14,17 @@ def find_first_sum(nums, goal : int):
                 return [p1, p2]
     return None
 
+def find_first_sum_dic(nums, goal : int):
+    dic = {}
+    for index, value in enumerate(nums):
+        desired = goal - value 
+        if desired in dic:
+            return [dic[desired], index]
+        
+        dic[value] = index
+    return None
 
-nums = [4, 5, 6, 2]
+
+nums = [4, 4, 2, 6, 2]
 print(find_first_sum(nums,8))
+print(find_first_sum_dic(nums,8))
